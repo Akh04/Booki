@@ -1,0 +1,668 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Raleway/static/Raleway-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* Début du CSS */
+
+
+body
+{
+    font-family: 'Raleway', "Arial Black", Arial, Impact;
+    max-width: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited
+{
+    color:none;
+}
+
+header
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Head
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_booki
+{
+    flex-basis: 40%;
+}
+
+.logo
+{
+    width: 200px;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+nav li
+{
+    padding-left: 30px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color:black;
+    padding: 20px 10px 20px 10px;
+}
+
+nav a:hover
+{
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+.bloc-recherche
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.bloc-recherche> h1
+{
+    margin-bottom: 0px;
+    
+}
+
+.bloc-recherche> p
+{
+    margin-top: 10px;
+}
+
+.Recherche
+{
+    display: flex;
+    width:33%;
+    font-size:14px;
+}
+
+.Barre-recherche-Logo
+{
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    font-size: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 9px 0px 15px;
+    width:5%;
+}
+
+.ButtonMobile
+{
+    display: none;
+}
+
+.Barre-recherche
+{
+    width:95%;
+}
+.Recherche input
+{
+    width: 65%;
+    height: 36px;
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+    font-family: Raleway;
+    font-size: 16px;
+    padding-right:0px;
+}
+
+.Rechercher
+{
+    width:100%;
+}
+
+.Recherche button
+{
+    width: 35%;
+    height: 40px;
+    color: white;
+    background-color: #0065fc;
+    border-radius: 0px 10px 10px 0;
+    text-align: center;
+    font-weight: bold;
+    padding-left:0px;
+}
+
+
+/*-----------------------------------------------------------------------------Filtres----------------------------------------------------------------------*/
+
+
+.Filtres
+{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+}
+
+.Filtres p
+{
+    font-weight: bold;
+    border : solid #F2F2F2;
+    border-radius : 50px;
+    margin-right: 20px;
+    padding: 0px 10px 0px 0;
+}
+
+.Filtres i
+{
+    background-color: #DEEBFF;
+    border: solid #DEEBFF 12px;
+    border-radius : 40px;
+    color: #0065fc
+}
+
+.Filtres b
+{
+    margin-right: 20px;
+}
+
+.Filtres a:hover
+{
+    color: #0065fc;
+}
+
+.Bloc-Infos
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Bloc-Infos p
+{
+    padding-left: 20px;
+}
+
+.Logo-Infos
+{
+    color:#0065fc;
+    border: 1px solid #dbdbdb;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Main-HebergementsEtPopulaires
+{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-wrap:wrap;
+}
+
+/*---------------------------------------------------------------------------Hébergements--------------------------------------------------------------------------*/
+
+
+.Main-Hebergements
+{
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: calc(65% - 60px);
+}
+
+.Images-Marseille
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Images-Marseille>a
+{
+    width: 31.33%;
+    border-radius: 20px 20px 20px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.Images-Marseille figure img
+{
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+ .Images-Marseille figure p
+ {
+     margin-left: 15px;
+ }
+
+
+ figure
+ {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.TitretIcone
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-------------------------------------------------------------------------Populaires----------------------------------------------------------------*/
+
+.Main-Populaires
+{
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: calc(33% - 60px);
+}
+
+.ImagesPopulaires
+{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.ImagesPopulaires>a
+{
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    justify-content: space-between;
+    background-color:white;
+    margin-top: 20px;
+}
+    
+.ImagesPopulaires figure
+{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    height:200px;
+}
+
+.ImagesPopulaires figure img
+{
+    height: 100%;
+    width: 40%;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+
+.ImagesPopulaires figcaption
+{
+    width:60%;
+    margin-left: 10px;
+}
+
+
+/*-----------------------------------------------------------------------------------------Activités----------------------------------------------------------------------*/
+
+.MainActivites
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ImagesActivites
+{
+    display:flex;
+    justify-content:space-between;
+    padding-bottom: 30px;
+    height:100%;
+}
+
+
+.ImagesActivites>a
+{
+    width:100%;
+    border-radius: 20px 20px 20px 20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.ImagesActivites figure
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.ImagesActivites figure img
+{
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.ImagesActivites figure p
+{
+    margin-left: 15px;
+}
+
+.PremActivite
+{
+    width:23%;
+}
+
+.DeuxActivite
+{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width:23%;
+}
+
+#Img250
+{
+    height:250px;
+}
+
+#Img200
+{
+    height:200px;
+}
+
+#Img230
+{
+    height:230px;
+}
+
+.FirstImg
+{
+    height:200px;
+}
+
+.TroiActivite
+{
+    width:23%;
+}
+
+.QuatActivite
+{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    width:23%;
+}
+
+.QuatActivite a
+{
+    height:48%;
+}
+
+.Height45
+{
+    height: 45%;
+}
+
+
+
+/*---------------------------------------------------------------------Footer----------------------------------------------------*/
+
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-right:25%;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+footer ul
+{
+    list-style-type: none;
+}
+
+
+
+
+/*------------------------------------Media Queries----------------------------------------------*/
+
+/*-------------------------------------Tablettes------------------------*/
+@media screen and (max-width:992px)
+{
+    .Recherche
+    {
+        width:50%;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    .bloc_page
+    {
+        width:auto;
+    }
+    
+    header
+    {
+        margin-left:none;
+        margin-right:none;
+    }
+
+    .Head
+    {
+        display:block;
+    }
+
+    .logo_booki
+    {
+        display:flex;
+        justify-content: center;
+    }
+
+    nav ul
+    {
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom:10px;
+    }
+
+    nav a 
+    {
+        font-weight: bold;
+        color:black;
+        border-bottom: 2px solid grey;
+    }
+
+    nav li 
+    {
+        padding-left: 0px;
+    }
+
+    nav a:hover
+    {
+        color: #0065fc;
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+    }
+
+    .Filtres
+    {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .Filtres>h3
+    {
+        width:100%;
+    }
+
+    .Recherche
+    {
+        width:70%;
+    }
+
+    .Recherche button
+    {
+        width:20%;
+    }
+
+    .ButtonDesktop
+    {
+        display:none;
+    }
+
+    .ButtonMobile
+    {
+        display:block;
+    }
+
+    .Rechercher
+    {
+        display:none;
+    }
+
+    #IcoButtonMobile
+    {
+        display:block;
+        color:white;
+        width:30px;
+        height:30px;
+        align-items:center;
+    }
+
+    .Main-HebergementsEtPopulaires
+    {
+        flex-direction:column-reverse;
+        margin-left:0;
+        margin-right:0;
+
+    }
+    .Main-Hebergements
+    {
+        width:auto;
+        padding-right:40px;
+        padding-left:40px;
+        background-color: transparent;
+    }
+
+    .Main-Populaires
+    {
+        width:auto;
+        padding-left:40px;
+        padding-right:40px;
+        border-radius:0;
+        
+    }
+
+    .Images-Marseille>a
+    {
+        width:100%;
+    }
+
+    .Images-Marseille figure
+    {
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 5px 5px 20px grey;
+        padding-bottom: 10px;
+    }
+
+    .MainActivites
+    {
+        flex-direction:column;
+        flex-wrap:wrap;
+        height:100%;
+    }
+
+    .ImagesActivites
+    {
+        display:block;
+        flex-direction:column;
+    }
+
+    .ImagesActivites a
+    {
+    padding-top:10px;
+    }
+
+    #Img200, #Img250, #ImgMob
+    {
+        height:230px;
+    }
+    
+    .PremActivite
+    {
+        width:100%;
+    }
+
+    .DeuxActivite
+    {
+        width:100%;
+    }
+
+    .TroiActivite
+    {
+        width:100%;
+        padding-top:10px;
+    }
+
+    .QuatActivite
+    {
+        width:100%
+    }
+
+    footer
+    {
+        display:flex;
+        flex-direction:column;
+    }
+}
